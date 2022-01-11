@@ -13,23 +13,19 @@ public class ModoApagado implements estadosMaquina{
         System.out.println("*** C A R G A N D O...***\n");
         System.out.println("***MAQUINA Encendida***\n");
     }
-
     
     public void mostrar() {
         System.out.println("***Maquina Apagada***\n No se puede mostrar ");
         
     }
-
     
     public void jugar() {
         System.out.println("***Maquina Apagada***\n No se puede jugar");
         
     }
-
     
     public void apagar() {
         System.out.println("***Maquina Apagada***\n Ya estoy apagada");
         
-    }
- 
+    } 
 }

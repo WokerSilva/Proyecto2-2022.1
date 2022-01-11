@@ -7,30 +7,28 @@ public class ModoEspera implements estadosMaquina{
     }
 
     public void activar() {
-        System.out.println("***MODO SUSPENDIDO***\n Maquina Tuk ha sido activada.");
-        
+        System.out.println("***MODO SUSPENDIDO***\n Maquina Tuk ha sido activada.");        
     }
 
     
-    public void mostrar() {
-        System.out.println("*** Esperando ***\n Cargando... vualva a presionar en mostrar");        
+    public void mostrar() {        
         coin.escuchaOrden();
-        coin.nuevoEstado(coin.getModoMostrar());        
+        coin.nuevoEstado(coin.getModoMostrar());
+        System.out.println("*** Esperando ***\n Cargando... vuelve a presionar");
     }
 
     
     public void jugar() {
         coin.escuchaOrden();
         coin.nuevoEstado(coin.getModoJugar());        
-        System.out.println("***MODO APAGADO***\n Activando... vuelva a pulsar Jugar");        
+        System.out.println("***MODO JUGAR***\n Listo, el juego ha comenzado");
     }
 
     
     public void apagar() {
         coin.escuchaOrden();
         coin.nuevoEstado(coin.getModoApagado());        
-        System.out.println("***Maquina esperando intrucción ***\n Apagando maquina");
-        
+        System.out.println("***Maquina esperando intrucción ***\n Apagando maquina");        
     }
     
 }

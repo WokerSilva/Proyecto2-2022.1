@@ -1,8 +1,10 @@
 import java.util.Scanner;
 
 public class Proyecto2{
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Maquina player = new Maquina();
+
+        CapituloUno chapterUno = new CapituloUno();
 
         Scanner sc = new Scanner(System.in);
         int opcion;
@@ -11,11 +13,13 @@ public class Proyecto2{
 						+ "\nPor favor selecciona la opcion que deseas ejecutar.");
         do{
             System.out.println(
-				"1.- Activar.\n" +
-				"2.- Mostrar.\n" + 
-				"3.- Jugar.\n" + 
-				"4.- Apagar.\n" +
-				"0.- Salir.\n");
+				"\n Maquina de juegos Tukesfor\n" +
+				"| 1.- Activar            |\n" +
+				"| 2.- Reglas             |\n" + 
+				"| 3.- Jugar              |\n" + 
+				"| 4.- Apagar             |\n" +
+				"| 0.- Salir              |\n" +
+				"|------------------------|\n");
             
                 while (true){
 					try {
@@ -25,11 +29,13 @@ public class Proyecto2{
 					}catch (NumberFormatException ex){
 						System.out.println("Por favor selecciona la opcion valida"
 							+ "que deseas ejecutar.\n" + 
-							"1.- Activar.\n" +
-				            "2.- Mostrar.\n" + 
-				            "3.- Jugar.\n" + 
-				            "4.- Apagar.\n" +
-				            "0.- Salir.\n");
+							"\n Maquina de juegos Tukesfor\n" +
+							"| 1.- Activar            |\n" +
+							"| 2.- Reglas             |\n" + 
+							"| 3.- Jugar              |\n" + 
+							"| 4.- Apagar             |\n" +
+							"| 0.- Salir              |\n" +
+							"|------------------------|\n");
 					}
 				}
                 
@@ -44,6 +50,7 @@ public class Proyecto2{
 
 					case 3:
 						player.jugar();
+                        chapterUno.mostrarHistorias();
 						break;
 
 					case 4:

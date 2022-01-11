@@ -10,7 +10,6 @@ public class ModoMostrar implements estadosMaquina{
         System.out.println("***Maquina Activa***\n Ya esta activada");
         
     }
-
     
     public void mostrar() {
         coin.escuchaOrden();
@@ -18,19 +17,16 @@ public class ModoMostrar implements estadosMaquina{
         System.out.println("***Maquina Activa***\n AQUI ESTAMOS MOSTRANDO INFORMACIÓN ");
         
     }
-
     
     public void jugar() {
         coin.escuchaOrden();
 		coin.nuevoEstado(coin.getModoJugar());
-        System.out.println("***Maquina Activa***\n Cargando... vuelva a presionar en Jugar.");
+        System.out.println("***Maquina Activa***\n Cargando... Listo.");
         
     }
-
     
     public void apagar() {
         System.out.println("***MODO APAGADO***\n ");
         
     }
- 
 }
