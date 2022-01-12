@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Proyecto2{
     public static void main(String[] args){
         Maquina player = new Maquina();
-		//Batalla verCheems = new Batalla();
+		Batalla verCheems = new Batalla();
 
         CapituloUno chapterUno = new CapituloUno();
 		CapituloDos chapterDos = new CapituloDos();
@@ -26,11 +26,12 @@ public class Proyecto2{
 				do{
 					System.out.println(
 					"\n Maquina de juegos Tuckrsoft\n" +
-					"| 1.- Activar Maquina    |\n" +
-					"| 2.- Reglas             |\n" + 
-					"| 3.- Jugar              |\n" + 					
-					"| 0.- Apagar             |\n" +
-					"|------------------------|\n");
+					"| 1.- Activar Maquina     |\n" +
+					"| 2.- Reglas              |\n" + 
+					"| 3.- Jugar bandersnatch  |\n" +
+					"| 3.- Jugar Cheems Heroe  |\n" + 								 					
+					"| 0.- Apagar              |\n" +
+					"|-------------------------|\n");
 				
 					while (true){
 						try {
@@ -43,7 +44,8 @@ public class Proyecto2{
 								"\n Maquina de juegos Tuckrsoft\n" +
 								"| 1.- Activar            |\n" +
 								"| 2.- Reglas             |\n" + 
-								"| 3.- Jugar              |\n" + 								
+								"| 3.- Jugar bandersnatch |\n" +
+								"| 3.- Jugar Cheems Heroe |\n" +
 								"| 0.- Apagar             |\n" +
 								"|------------------------|\n");
 						}
@@ -62,7 +64,10 @@ public class Proyecto2{
 							chapterDos.mostrarHistorias();
 							chapterUno.mostrarHistorias();							
 							break;						
-
+						
+						case 4:
+							player.jugarDos();
+							verCheems.muestraCheems();
 						case 0:
 							break;
 	

@@ -23,6 +23,10 @@ public class ModoEspera implements estadosMaquina{
         System.out.println("***MODO JUGAR***\n Listo, el juego ha comenzado");
     }
 
+    public void jugarDos(){
+        System.out.println("***MODO JUGAR***\n Comenzando Juego");   
+    }
+
     
     public void apagar() {
         coin.escuchaOrden();

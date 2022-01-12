@@ -11,6 +11,8 @@ public class Maquina{
     private estadosMaquina modoApagado;
     // Variable de tipo estadosMaquina para el modo Jugar
     private estadosMaquina modoJugar;
+    // Variable de tipo estadosMaquina para el modo Jugar
+    private estadosMaquina modoJugarDos;
     // Variable de tipo estadosMaquina para el modo Mostrar
     private estadosMaquina modoMostrar;
 
@@ -23,6 +25,7 @@ public class Maquina{
         modoEspera = new ModoEspera(this);
         modoApagado = new ModoApagado(this);
         modoJugar = new ModoJugar(this);
+        modoJugarDos = new ModoJugarDos(this);
         modoMostrar = new ModoMostrar(this);
 
         estadoActual = modoApagado;
@@ -44,6 +47,10 @@ public class Maquina{
         estadoActual.jugar();
     }
 
+    // Método para activar el segundo modo de juego
+    public void jugarDos(){
+        estadoActual.jugarDos();
+    }
     // Método para activar modo mostrar información
     public void mostrar(){
         estadoActual.mostrar();
@@ -81,6 +88,14 @@ public class Maquina{
      */
     public estadosMaquina getModoJugar(){
         return modoJugar;
+    }
+
+    /**
+     * Método que obtiene el segundo estado "ModoJugar"
+     * @return modoJugarDos
+     */
+    public estadosMaquina getModoJugarDos(){
+        return modoJugarDos;
     }
 
     /**

@@ -25,6 +25,12 @@ public class ModoMostrar implements estadosMaquina{
         
     }
     
+    public void jugarDos(){
+        coin.escuchaOrden();
+		coin.nuevoEstado(coin.getModoJugarDos());
+        System.out.println("***Maquina Activa***\n Cargando... Listo.");
+    }
+
     public void apagar() {
         System.out.println("***MODO APAGADO***\n ");
         

@@ -8,6 +8,8 @@ public interface estadosMaquina {
     public void mostrar();
     // Modela el comportamiento de jugar dentro de la maquina
     public void jugar();
+    // Modela el comportamiento de jugar dentro de la maquina
+    public void jugarDos();
     // Modela el comportamiento de apagar la maquina
     public void apagar();
 }
