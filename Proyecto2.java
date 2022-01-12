@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Proyecto2{
     public static void main(String[] args){
         Maquina player = new Maquina();
+		//Batalla verCheems = new Batalla();
 
         CapituloUno chapterUno = new CapituloUno();
 		CapituloDos chapterDos = new CapituloDos();
@@ -14,6 +15,7 @@ public class Proyecto2{
 						+ "\n Para comenzar su aventura active la maquina\n"+
 							  "[1] Activar Maquina\n" + 
 							  "[2] Apagar Maquina \n" );
+		
 		while (true){
 			try {
 			String inicioMaquina = sc.nextLine();
