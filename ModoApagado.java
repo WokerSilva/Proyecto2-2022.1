@@ -10,8 +10,8 @@ public class ModoApagado implements estadosMaquina{
         System.out.println("***MAQUINA APAGADA***\n");
         coin.escuchaOrden();
 		coin.nuevoEstado(coin.getModoEspera());
-        System.out.println("*** C A R G A N D O...***\n");
-        System.out.println("***MAQUINA Encendida***\n");
+        System.out.println("***  C A R G A N D O  ***\n");
+        System.out.println("***MAQUINA ENCENDIDA***\n");
     }
     
     public void mostrar() {
@@ -25,7 +25,7 @@ public class ModoApagado implements estadosMaquina{
     }
     
     public void apagar() {
-        System.out.println("***Maquina Apagada***\n Ya estoy apagada");
+        System.out.println("***Maquina Apagada***\n");
         
     } 
 }

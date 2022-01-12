@@ -4,15 +4,13 @@ public class CapituloUno implements Historia{
     @Override
     public void mostrarHistorias() {
 
-        System.out.println("\n \n El inicio");
-
+        System.out.println("\n \n Capitulo: El inicio \n  ... 20 Dec 22");
         Scanner sc = new Scanner(System.in);
         int sw;
 		int opcion;
         
-
         System.out.println("Eres un investigador bioquímico. Actualmente trabajas en una" + 
-                            "mutación para curar la ceguera \n \n");
+                            "mutación para curar la ceguera \n");
         System.out.println("Llegas al laboratorio ¿Qué es lo primero que haces?\n");
         // Para repetir el menú si se da otra opción
         while (true){
@@ -21,7 +19,7 @@ public class CapituloUno implements Historia{
                 System.out.println("Elige entre 1 o 2 para seguir con el juego ");                                
                 System.out.println("[1] Preparas tu café\n"+
                                    "[2] Activas protocolos de seguridad\n" +
-                                   "[0] Salir\n");
+                                   "[ ] Otro número para salir del capitulo\n");
 
                 String opcionUsuario = sc.nextLine();
                 sw = Integer.parseInt(opcionUsuario);
@@ -132,18 +130,21 @@ public class CapituloUno implements Historia{
                                 // CUARTA SECUENCIA 
                                 }else if(opcion == 2){
                                     System.out.println("Vuelves y la encima produjo un gas pequeño el cual has "+ 
-                                                       "respirado no le das importancia y te vas a dormir \n");
+                                                       "respirado no le das importancia y te vas a dormir \n" +
+                                                       "20 Dec 22...");                                
                                 }
                             }
                         }
                     case 0: // Caso de Salida
+                        System.out.println("Ha salido del capitulo");
                             break;                
                 }
 
             break;                                
             }catch(NumberFormatException ex)
                 { 
-                System.out.println("Solo es valido los numeros.\n Eliga entre sus dos opciones (1 o 2) ");
+                System.out.println("Solo es valido los numeros. Eliga entre sus dos opciones (1 o 2)\n " +
+                                   "Juego reiniciado\n \n");
                 }
         }                
     }    
