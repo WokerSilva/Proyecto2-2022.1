@@ -9,7 +9,7 @@ public class Mago implements Personaje {
 
     // Metodo constructor    
     public Mago(){
-        nombre = "Mago";
+        nombre = "Mago de las montañas";
         vida = 110;
         ataque = 130;
     }

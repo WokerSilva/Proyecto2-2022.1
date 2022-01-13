@@ -7,13 +7,11 @@ public class ModoJugar implements estadosMaquina{
     }
 
     public void activar() {
-        System.out.println("***MODO JUGAR***\n Ya esta activa.");
-        
+        System.out.println("***MODO JUGAR***\n Ya esta activa.");        
     }
     
     public void mostrar() {
-        System.out.println("***MODO JUGAR***\n Informacion mostrada ");
-        
+        System.out.println("***MODO JUGAR***\n Informacion mostrada ");        
     }
     
     public void jugar() {

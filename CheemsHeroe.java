@@ -9,7 +9,7 @@ public class CheemsHeroe implements Personaje {
 
     // Metodo constructor    
     public CheemsHeroe(){
-        nombre = "Cheems Heroe";
+        nombre = "Cheems Heroe  ";
         vida = 200;
         ataque = 65;
     }

@@ -9,10 +9,10 @@ public class PoderVikingo extends Poderes{
     }
 
     public int vida(){
-        return poder.vida() + 20;
+        return poder.vida() + 10;
     }
 
     public int ataque(){
-        return poder.ataque() + 90;
+        return poder.ataque() + 85;
     }
 }

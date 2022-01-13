@@ -7,13 +7,13 @@ public class ModoEspera implements estadosMaquina{
     }
 
     public void activar() {
-        System.out.println("***MODO SUSPENDIDO***\n Maquina Tuk ha sido activada.");        
+        System.out.println("***MODO SUSPENDIDO***\n Maquina Tuk ha sido activada.");    
     }
     
     public void mostrar() {        
         coin.escuchaOrden();
         coin.nuevoEstado(coin.getModoMostrar());
-        System.out.println("*** Esperando ***\n Cargando... vuelve a presionar");
+        System.out.println("***MODO SUSPENDIDO***\n Cargando... vuelve a presionar");
     }
 
     
@@ -32,6 +32,5 @@ public class ModoEspera implements estadosMaquina{
         coin.escuchaOrden();
         coin.nuevoEstado(coin.getModoApagado());        
         System.out.println("***Maquina esperando intrucción ***\n Apagando maquina");
-    }
-    
+    }   
 }

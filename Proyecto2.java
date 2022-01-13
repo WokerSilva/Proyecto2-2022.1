@@ -25,11 +25,12 @@ public class Proyecto2{
 				player.activar();
 				do{
 					System.out.println(
+					"--------------------------------------" +	
 					"\n Maquina de juegos Tuckrsoft\n" +
 					"| 1.- Activar Maquina     |\n" +
 					"| 2.- Reglas              |\n" + 
 					"| 3.- Jugar bandersnatch  |\n" +
-					"| 3.- Jugar Cheems Heroe  |\n" + 								 					
+					"| 4.- Jugar Cheems Heroe  |\n" + 								 					
 					"| 0.- Apagar              |\n" +
 					"|-------------------------|\n");
 				
@@ -41,11 +42,12 @@ public class Proyecto2{
 						}catch (NumberFormatException ex){
 							System.out.println("Por favor selecciona la opcion valida "
 								+ "que deseas ejecutar.\n" + 
+								"--------------------------------------" +	
 								"\n Maquina de juegos Tuckrsoft\n" +
 								"| 1.- Activar            |\n" +
 								"| 2.- Reglas             |\n" + 
 								"| 3.- Jugar bandersnatch |\n" +
-								"| 3.- Jugar Cheems Heroe |\n" +
+								"| 4.- Jugar Cheems Heroe |\n" +
 								"| 0.- Apagar             |\n" +
 								"|------------------------|\n");
 						}
@@ -61,13 +63,15 @@ public class Proyecto2{
 							break;
 	
 						case 3:							
+							player.jugar();
 							chapterDos.mostrarHistorias();
 							chapterUno.mostrarHistorias();							
 							break;						
 						
 						case 4:
 							player.jugarDos();
-							verCheems.muestraCheems();
+							verCheems.batallaCheems();
+							
 						case 0:
 							break;
 	
@@ -83,7 +87,7 @@ public class Proyecto2{
 			}else{
 				System.out.println("\n Hasta pronto!");
 			}     
-
+		sc.close();
 		break;                                
     	}catch(NumberFormatException ex)
             { 

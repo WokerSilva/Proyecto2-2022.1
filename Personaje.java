@@ -3,12 +3,7 @@
 
 public interface Personaje{
 
-
     public String nombre();
-
     public int vida();
-
     public int ataque();
-
 }
-

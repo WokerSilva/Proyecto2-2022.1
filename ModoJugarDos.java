@@ -11,8 +11,7 @@ public class ModoJugarDos implements estadosMaquina{
     }
     
     public void mostrar() {
-        System.out.println("***MODO JUGAR***\n Informacion mostrada ");
-        
+        System.out.println("***MODO JUGAR***\n Informacion mostrada ");        
     }
     
     public void jugar() {

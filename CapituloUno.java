@@ -4,14 +4,19 @@ public class CapituloUno implements Historia{
     @Override
     public void mostrarHistorias() {
 
+        System.out.println("----------------------------------------------------------------------------------\n");
+        System.out.println("----------------------------------------------------------------------------------");
         System.out.println("\n \n Capitulo: El inicio \n  ... 20 Dec 22");
+        System.out.println("----------------------------------------------------------------------------------\n");
         Scanner sc = new Scanner(System.in);
         int sw;
 		int opcion;
-        
+
+        System.out.println("----------------------------------------------------------------------------------\n");
         System.out.println("Eres un investigador bioquímico. Actualmente trabajas en una" + 
                             "mutación para curar la ceguera \n");
         System.out.println("Llegas al laboratorio ¿Qué es lo primero que haces?\n");
+        System.out.println("----------------------------------------------------------------------------------\n");
         // Para repetir el menú si se da otra opción
         while (true){
             try {
@@ -79,8 +84,7 @@ public class CapituloUno implements Historia{
                                                "[F I N]"); 
                         break;
                         }
-
-                    
+                    break;
                     // PRIMERA SECUENCIA 
                     case 2:
                         System.out.println("Los protocolos están activos. Empiezas a leer" + 
@@ -135,9 +139,10 @@ public class CapituloUno implements Historia{
                                 }
                             }
                         }
+                    break;
                     case 0: // Caso de Salida
                         System.out.println("Ha salido del capitulo");
-                            break;                
+                    break;                
                 }
 
             break;                                

@@ -9,10 +9,10 @@ public class PoderJedi extends Poderes{
     }
 
     public int vida(){
-        return poder.vida() + 60;
+        return poder.vida() + 55;
     }
 
     public int ataque(){
-        return poder.ataque() + 80;
+        return poder.ataque() + 75;
     }
 }

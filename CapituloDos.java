@@ -4,12 +4,17 @@ public class CapituloDos implements Historia{
     @Override
     public void mostrarHistorias() {
         
+        System.out.println("----------------------------------------------------------------------------------\n");
+        System.out.println("----------------------------------------------------------------------------------");
         System.out.println("\n \n Capitulo: Escape \n  ... 21 Dec 22");
+        System.out.println("----------------------------------------------------------------------------------\n");
         Scanner sc = new Scanner(System.in);
         int sw;
 		int opcion;
-        
+
+        System.out.println("----------------------------------------------------------------------------------\n");
         System.out.println("Te encuentras en tu salón de clases y entonces se escucha un ruido muy fuerte\n");
+        System.out.println("----------------------------------------------------------------------------------\n");
         // Para repetir el menú si se da otra opción
         while (true){
             try {
