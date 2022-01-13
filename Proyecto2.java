@@ -68,10 +68,13 @@ public class Proyecto2{
 							chapterUno.mostrarHistorias();							
 							break;						
 						
-						case 4:
+						case 4:							
 							player.jugarDos();
 							verCheems.batallaCheems();
-							
+							verCheems.muestaHabilidad();
+							verCheems.eligeEnemigos();
+							//verCheems.bMago();							
+							break;
 						case 0:
 							break;
 	
@@ -81,7 +84,7 @@ public class Proyecto2{
 					}
 
 				}while(opcion != 0);		
-
+			break;
 			}else if (opcion == 2){
 				player.apagar();				
 			}else{

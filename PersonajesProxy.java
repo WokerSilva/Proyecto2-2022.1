@@ -19,14 +19,14 @@ public class PersonajesProxy implements verPersonajes{
 
             while((catalogo = Bdragon.readLine())!= null){
                 System.out.print(catalogo + "\n");
-            }            
+            }
+            Bdragon.close();            
         }catch(IOException e){
             e.getCause();
         }                
     }
 
-    public void muestraSpectre(){
-        
+    public void muestraSpectre(){        
         System.out.println(spectre.nombre() + " no hay muchos datos sobre este peligro \n" +
         "Informacion intercepatada por Cheems dice contar con: vida  " + spectre.vida() + " y un ataque de  " + spectre.ataque());
 
@@ -38,14 +38,13 @@ public class PersonajesProxy implements verPersonajes{
             while((catalogo = Bspectre.readLine())!= null){
                 System.out.print(catalogo + "\n");
             }
-            
+            Bspectre.close();
         }catch(IOException e){
             e.getCause();
         }        
     }
 
-    public void muestraMago(){
-        
+    public void muestraMago(){        
         System.out.println("El "+ ((Personaje) mago).nombre() + " es un enemigo muy conocido de la tierra media\n" +
         "Este viejo conocido de Cheems posee: vida  " + ((Personaje) mago).vida() + " y un ataque de  " + ((Personaje) mago).ataque());
 
@@ -57,14 +56,14 @@ public class PersonajesProxy implements verPersonajes{
             while((catalogo = Bmago.readLine())!= null){
                 System.out.print(catalogo + "\n");
             }
-            
+            Bmago.close();
         }catch(IOException e){
             e.getCause();
         }
     }
 
-
     public void muestraCheems(){
+        System.out.println("Cheems necesitará tu ayuda....");
         try{
             FileReader fr = new FileReader("Cheems.txt");
             BufferedReader cheem = new BufferedReader(fr);

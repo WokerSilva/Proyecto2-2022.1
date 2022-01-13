@@ -23,7 +23,7 @@ public class ModoApagado implements estadosMaquina{
     }
 
     public void jugarDos(){
-        System.out.println("***Maquina Apagada***\n No se puede jugar");        
+        System.out.println("***Maquina Suspendida***\n Reiniciando Juego");        
     }
     
     public void apagar() {
